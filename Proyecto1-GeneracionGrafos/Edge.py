@@ -12,8 +12,11 @@ class Edge:
         return str(self.id)
 
     # Metodo para agregar una arista al grafo
-    def addEdge(self, edge):
-        self.edges.append(edge)
+    # def addEdge(self, edge):
+    #     self.edges.append(edge)
+    def addEdge(self, x, y):
+        self.node0 = x
+        self.node1 = y
 
     # Metodo que obtiene el nodo origen de la arista
     def getNode0(self):
